@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var users = ["Murali R","Krishna","Ra","Ravi","kiran"] // Creating An Empty array
+        // users.push("VMK") // Push will add a value to the last of the Array
+        // console.log(users.length);
+        // users.unshift("Ram Krishna") // Unshift method will add a value at Starting of An Array
+        // users.splice(2,0,"Ayesha") // SPlice will add a value at Middle
+
+        // users.pop() // POP method will remove the Last Value of the Array
+        // users.shift() // SHIFT method will remove the first Value of the Array
+        // users.splice(2,1) // Splice method will remove a value at specified Index
+
+        // for(i=0;i<users.length;i++){
+        //     console.log(users[i])
+        // }
+
+        // var name3 = users.find(function (val){
+        //     return val.length ==3
+        // })
+
+        // var name3 = users.filter(function (val){
+        //     return val.length ==3
+        // })
+        // console.log(name3)
+
+        // var check = users.every(function (val){
+        //     return val.length >=3
+        // })
+
+        var check = users.some(function (val){
+            return val.length == 8
+        })
+
+        // users.sort()
+        // users.reverse()
+        console.log(check)
+        users.forEach(function(val){
+            console.log(val)
+        })
+    </script>
+</body>
+</html>
